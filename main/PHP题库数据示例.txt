@@ -1,0 +1,1012 @@
+php试题与答案（单选、多选、对错） 
+1．mysql_connect( )与@mysql_connect( )的区别是(     B  )   
+
+  A  @mysql_connect( )不会忽略错误,将错误显示到客户端   
+
+  B  mysql_connect( )不会忽略错误,将错误显示到客户端   
+
+  C  没有区别   
+
+  D  功能不同的两个函数  
+
+ 2．语句for(k=0; k=0;k=1;k++);和语句for( k++);和语句for(k=0;k==1; k==1;k++);执行的次数分别是:  A  
+
+A  无限和0   
+
+B  0和无限   
+
+C  都是无限   
+
+D  都是0    
+
+ 3．读取post方法传递的表单元素值的方法是: B   
+
+ A  $_post["名称"]   
+
+B  $_POST["名称"]   
+
+C  $post["名称"]   
+
+ D  $POST["名称"]      
+
+4．PHP运算符中，优先级从高到低分别是（ ）B    
+
+A  关系运算符，逻辑运算符，算术运算符   
+
+B  算术运算，关系运算符，逻辑运算符
+
+C  逻辑运算符，算术运算符，关系运算符   
+
+D  关系运算符，算术运算符，逻辑运算符    
+
+5．cookie的值存储在（ ) C   
+
+A  硬盘中  
+
+B  程序中 
+
+C  客户端 
+
+D  服务器端    
+
+6．要查看一个变量的数据类型,可使用函数( ) B  
+
+  A  type()    B  gettype()    C  GetType()    D  Type()    
+
+7．字符串的比较，是按（  ）进行比较。 B   
+
+A  拼音顺序    B  ASCII码值    C  随机    D  先后顺序    
+
+8．复选框的type属性值是( ) A
+
+A  checkbox    B  radio    C  select    D  check   
+
+ 9．SESSION会话的值存储在(   ） D   
+
+A  硬盘上    B  网页中    C  客户端    D  服务器端 
+
+10．如果想取得最近一条查询的信息,应该使用哪个函数(   ) A   
+
+A  mysql_info    B  mysql_stat    C  mysql_insert_id( )    D  mysql_free_result    
+
+11．要查看一个结构类型变量的值,可以使用函数( )   D   
+
+A  Print( )    B  print( )    C  Print_r()    D  print_r( )    
+
+12．在PHP中哪个变量数组总是包含所有总客户端发出的cookies数据(    ) A  
+
+ A   C OOKIEB COOKIEB_COOKIES    C   G ETCOOKIED GETCOOKIED_GETCOOKIES   
+
+ 13．下列哪个说法是错误的(  ) D   
+
+ A  gettype( )是查看数据类型的   
+
+ B  没有被赋值的变量是0   
+
+ C  unset( )是被认为NULL   
+
+D  双引号字符串最重要的一点是其中的变量名会被变量值替代
+
+14．HTML中,超链接用的是什么标签 A   
+
+A  〈a>    B  〈table>    C  〈b>    D  〈head>    
+
+15．strtolower( )函数的功能是（ ）   A   upper  转为大写   
+
+ A  将给定的字符串全部转换为小写字母
+
+ B  将给定的字符串全部转换为大写字母
+
+16．HTML中,表格单元格的"值"是存储在( )标签里  B  
+
+A  〈body>  
+
+B  <td>   
+
+C  〈tr>   
+
+D  〈table>    <tr>     <td>REFDVCD</td>   </tr> </table> 
+
+ 17．将一个值或变量转换为字符类型的函数是( ) B   
+
+ A  intval( )    B  strval( )    C  str    D  valint( )    
+
+18．php中字符串的连接运算符是（ ）   D    
+
+ A  -    B  +    C  &    D  .    
+
+19．php函数不支持的功能有:    C   
+
+A  可变的参数个数   
+
+B  通过引用传递参数   
+
+C  通过指针传递参数 
+
+D  实现递归函数    
+
+ 20．文件框的type属性值是( ) C   
+
+A  text    B  hidden    C  textarea    D  checkbox    
+
+21．运算符“^”的作用是（ ） D   
+
+A  无效    B  乘方    C  位非    D  位异或    
+
+22．自定义函数中，返回函数值的关键字是（ ）   A
+
+A  returns    B  close    C  return    D  back    
+
+ 24．要检查一个常量是否定义,可以使用函数( )    A   
+
+  A  defined( )    B  isdefin( )    C  isdefined( )    D  无    
+
+ 25．关于mysql_select_db的作用描述正确的是(    )    D   
+
+A  连接数据库    B  连接并选取数据库    C  连接并打开数据库    D  选取数据库    
+
+ 26．HTML中,title标签放在什么位置     B   
+
+A  body标签里    B  head标签里    C  script标签里    D  table标签里    
+
+27．使用（ ）函数可以求得数组的大小    A   
+
+ A  count( )    B  conut( )    C   C OUNT["名称"] D COUNT["名称"]D_CONUT["名称"]    
+
+28．从队列数组队头删除数据可以使用（ ）函数。    C   
+
+A  array_push()  B  array_pop()  C  array_shift()  D array_unshift()   
+
+29．在html中嵌入JavaScript,应该使用的标记是(   )    A   
+
+A  〈script language="javascript">    B  〈head> 〈/head>    C  〈body> 〈/body>    D  〈!--....//..>
+
+30．以下代码运行结果(   ) C
+
+A=array("Monday","Tuesday",3=>"Wednesday");echo A=array("Monday","Tuesday",3=>"Wednesday");echoA[2];    
+
+ A  Monday    B  Tuesday    C  Wednesday    D  没有显示    
+
+31．新建一个数组的函数是(  )     A   
+
+A  array    B  next    C  count    D  reset    
+
+32．下列不正确的变量名是( )    B   
+
+ A   t estB testB2abc    C  VarD VarDprintr     
+
+33．读取get方法传递的表单元素值的方法是: A   
+
+A   G ET["名称"]B GET["名称"]Bget["名称"]    C  GEG["名称"]D GEG["名称"]D_get["名称"]    
+
+34．函数var_dump的意义是( ) C   
+
+A  定义数组    B  遍历数组    C  输出变量的相关信息    D  递归数组    
+
+35．strtoupper( )函数的功能是： A   
+
+A  将给定字符串全部转换为大写字母。   
+
+B  将给定字符串全部转换为小写字母。   
+
+C  将给定字符串首字母转换为大写字母。   
+
+D  将给定字符串首字母转换为小写字母。    
+
+36．以下代码的运行结果是(  ) B    
+
+ if($i="") {echo "a";}else {echo "b";} ?>    
+
+ A  输出a    B  输出b    C  条件不足,无法确定    D  运行出错
+
+37．在str_replace(1,2,3)函数中1 2 3 所代表的名称是(  )     B   
+
+A  "取代字符串＂，＂被取代字符串＂，＂来源字符串＂   
+
+B  ＂被取代字符串＂，"取代字符串＂，＂来源字符串＂   
+
+C  ＂来源字符串＂，"取代字符串＂，＂被取代字符串＂   
+
+D  ＂来源字符串＂，＂被取代字符串＂，"取代字符串＂    
+
+38．浏览网页时,看到的内容是HTML的哪一部分? C   
+
+A  title    B  table    C  body    D  head    
+
+39．运算符"%"的作用是( ) C   
+
+A  无效    B  取整     B  取整    D  除    
+
+40．file()函数返回的数据类型是（  )    A   
+
+ A  数组    B  字符串    C  整型    D  根据文件来定    
+
+41．计算字符串长度的函数是（ ） A   
+
+ A  strlen( )    B  len( )    C  stringlen( )    D  lens( )    
+
+ 42．array_push()的作用是（  ） C   
+
+A  将数组的第一个元素弹出   
+
+B  将数组的最后一个元素弹出   
+
+C  将一个或多个元素压入数组的末尾   
+
+D  将一个或多个元素插入数组的开头    
+
+43．isset()的功能是( )     A   
+
+A  测试变量是否存在
+
+44．定义静态变量的关键字是（ ）    A   
+
+A  static    B  statics    C  STATIC    D  STATICS   
+
+45．以下属于忽略键名数组排序的是（ ）  D
+
+A  natsort    B  ksort    C  asort    D  sort    
+
+46．empty()的功能是：       A   
+
+A  测试变量是否为空   
+
+B  测试变量是否存在   
+
+C  测试常量是否为空   
+
+D  测试常量是否存在    
+
+47．浏览网页时,看到的内容是HTML的哪一部分?   C   
+
+A  title    B  table    C  body    D  head    
+
+48．自定义用户常量,可以使用( )函数. B   
+
+A  Define( )    B  define( )    C  Defin( )    D  defin( )    
+
+49．执行下列代码后的结果是( ) x=15;echo x=15;echox++; y=20;echo++ y=20;echo++y;  B   
+
+A  15,20    B  15,21    C  16,20    D  16,21    
+
+50．申明全局变量的关键字是（ ） B   
+
+A  globals    B  global    C  GLOBAL
+
+ 
+
+多项选择题:（共12题，每题5分）          
+
+1．PHP中，不等运算符是（ ）  BC   
+
+A  ≠    B  !=    C  <>    D  ><   
+
+2．函数的参数传递包括：    AB   
+
+A  按值传递    B  按引用传递    C  按变量传递    D  按作用域传递   
+
+3．php中，赋值运算符有（ ）   ADB   
+
+A  =    B  +=    C  ==    D  .=   
+
+4．php中可以实现程序分支结构的关键字是（ ）     CD   
+
+A  while    B  for    C  if    D  switch   
+
+5．continue语句可以用在（ ）中。     ABC   
+
+A  for    B  while    C  do-while    D  switch   
+
+6．break可以用在（ ）语句中     ABCD   
+
+A  switch    B  for    C  while    D  do-while   
+
+7．php中可以实现循环的是（ ）  A C   
+
+ A  for    B  break    C  while    D  waiting   
+
+8．PHP中,标识符允许出现的符号有:   ABC   
+
+ A  大写字母    B  小写字母    C  数字
+
+9．PHP允许的注释符号有:   ACD   
+
+A  //    B  闭合的段落    C  #    D  /*和*/闭合的段落   
+
+10．PHP表单的提交方法有:    ACB   
+
+ A  post    B  request    C  get    D  querystring   
+
+11．PHP语言标记用的是什么( )符号   ACD   
+
+ A  〈? ?>    B  〈php >    C  〈?php ?>    D  〈% %>   
+
+12．php中数组可以使用哪些键名？     AB   
+
+A  数字键名    B  下标    C  随机    D  文本（或字符串）键名       
+
+ 
+
+判断题:（共40题，每题1分）          
+
+1．在返回数组中的所有值，可以使用array_value( )函数 T 
+
+2．运算符“++”可以对常量和变量进行累加1 F
+
+3．php语言中的数值型字符串可以和数字变量进行混合运算. T 
+
+4．php中,双引号字符串支持变量解析以及转义字符. T
+
+5．php语言中的数值型字符串不可以和数字变量进行混合运算. F
+
+6．PHP程序的扩展名必须是.php F
+
+7．php中,字符串是用引号引起来的字符,单引号和双引号没有区别,都是一样的,随便用哪一个都是一样的. F
+
+8．if条件控制语句中，if后面的{ }可有可无，意义一样。 F
+
+9．一个MySQL服务器,可以拥有多个数据库,每个数据库可拥有多个表. T
+
+10．MS-server200与mysql一样,同属微软公司的产品,用于软件开发的数据库支持 F
+
+11．运算符“--”可以对常量和变量进行自身减1 F
+
+12．php中,单引号字符串不支持变量解析以及转义字符. T
+
+13．if条件控制语句中，if后面的{ }不能省略。 F
+
+14．< form id="form1" name="form1" method="" action="" >，默认的method使用get进行值传递。 F
+
+15．〈form id="form1" name="form1" method="" action="">，默认的method使用post进行值传递。 F
+
+16．常量的作用域是全局的,不存在全局与局部的概念. T
+
+17．if条件控制语句中，if后面必须加括号 T
+
+18．使用get和post传递表单值没有什么区别,可以随便选择一种使用. F
+
+19．php中,在任何时候,双引号和单引号都是不一样的. F
+
+20．运算符“++”只能对常量进行自身加1 F
+
+21．if条件控制语句中，if后面的{ }可有可无。 F
+
+22．PHP跟ASP一样,只能应用IIS架设服务器 F
+
+23．MySQL可以建立个用户,但每个用户的权限一样,仅是名称不一样而已. F
+
+24．php中，（）与{ }具有不一样的功能。 T 
+
+25．php中可以使用method=post的方式进行文件上传 F 
+
+26．php中，==与===是同一个运算符。 F 
+
+27．MySQL数据库可以建立多个用户,且各个用户的权限可以分别设置. T
+
+30．array_search() 与in_array()函数均可用来查询数组中元素的值。 F
+
+31．PHP是微软公司开发的,应用于设计网页的语言 F
+
+32．php中,双引号和单引号在某些时候具有不同的意义,在某些时候具有相同的意义. T
+
+33．array_unshift()函数在数组的末尾插入一个或多个元素，返回成功插入后的总元素个数。  F
+
+34．current()和pos()均可返回数组中的当前单元。 F
+
+35．在返回数组中的所有值，可以使用array_keys( )函数   F 
+
+36．php中，函数默认按值传递参数。 T
+
+37．php中,双引号字符串不支持变量解析以及转义字符.   F 
+
+38．session与cookie只是名称不同,实质上没有什么区别,均可用于实现用户登录等功能. F
+
+39．运算符“++”只能对变量的值自身累加1 F
+
+
+
+一：选择题（单项选择，每题2分）：
+
+ 
+
+1． LAMP具体结构不包含下面哪种（A      ）
+
+A：Windows系统              如果是这个就是WMP
+
+B：Apache服务器 
+
+C：MySQL数据库
+
+D：PHP语言
+
+2． 以下哪个SQL语句是正确的（D    ）
+
+A：insert into users 少了一个values (‘p001’,’张三’,’男’);
+
+B：create table (Code int primary key);     漏了一个表名
+
+C：update users 少了一个set Code=’p002’ where Code=’p001’;
+
+D：select Code as ‘代号’ from users；
+
+3． 以下哪种类型是B/S架构的正确描述（C）     B/S　浏览器
+
+A：需要客户安装客户端    在浏览器上打开，并不需要安装客户端
+
+B：不需要安装就可以使用        浏览器的一些程序也需要安装后在使用的   例如cms
+
+C：依托浏览器的网络系统
+
+D：不需要服务器的系统        每种程序都需要服务器
+
+4 .php中哪个语句可以输出变量类型（C）
+
+A：echo    输出字符串        
+
+B：print    输出字符串
+
+C：var_dump()    输出类型  变量的值
+
+D：print_r()   输出数组的 并没输出类型
+
+ 
+
+ 
+
+5 .php定义变量正确的是（  B     ）
+
+A：var a = 5;    JS定义方式
+
+B： $a = 10;     
+
+C：int b = 6;    强类型语言定义方式
+
+D：var $a = 12;     前面不需要加var
+
+6 .php中单引号和双引号包含字符串的区别正确的是（D）   
+
+A：单引号速度快，双引号速度慢        
+
+B：双引号速度快，单引号速度慢       A和B定义方式没有速度差别
+
+C：单引号里面可以解析转义字符      单引号可以原样输出
+
+D：双引号里面可以解析变量
+
+7 .若x,y为整型数据，以下语句执行的$y结果为（     B）
+
+$x = 1;                        x定义等于1           
+
+++$x;                          x等于2了
+
+ $y =$x++;                  先把x值附给y，在把x自加1所有等于2！！如果是++$x就是3
+
+    A：1    B：2    C：3    D：0
+
+8 .php中关于字符串处理函数以下说法正确的是（     C     ）
+
+A：implode( )方法可以将字符串拆解为数组           应该用explode     implode是合并 正好相反
+
+B：str_replace()可以替换指定位置的字符串          查找替换把满足的全部替换 可以用substr_replace 这种是用来替换指定位置
+
+C：substr( )可以截取字符串            
+
+D：strlen( )不能取到字符串的长度               可以获取长度
+
+9 .以下代码运行结果为：（A       ）
+
+       <?php
+
+$first = "This course is very easy !";     定义了一个变量first=
+
+$second = explode(" ",$first);              由定义了一个变量second=拆分字符串   用空格拆分的
+
+$first = implode(",", $second);              将数字组合并了字符串
+
+echo $first; 
+
+?>
+
+A  This,course,is,very,easy,!            把原来的空格变成了 ，
+
+B  This course is very easy !
+
+C  This course is very easy !,
+
+D  提示错误
+
+ 
+
+10 .以下程序横线处应该使用的函数为：（ B ）         作用：把@符号前面的字符全部截掉
+
+<?php
+
+      $email = ‘langwan@thizlinux.com.cn’;    
+
+      $str = ____($email,‘@’);
+
+      $info = ____(‘.’,$str);
+
+      ____($info);
+
+   ?>
+
+   输出结果为：
+
+Array ([0] => @thizlinux [1]=>com[2]=>cn)    输出结果是一个数组
+
+
+
+A：strchr, split, var_dump        如果是这个的话就应该有类型，长度
+
+B：strstr, explode, print_r         strstr 也可以截取字符串，不常用
+
+C：strstr,explode, echo
+
+D：strchr, split, var,_dump
+
+11、下列说法正确的是：（B）    如果不放在php里面那么ACD都是正确的
+
+A. 数组的下标必须为数字，且从“0”开始           放强类型语言是对的
+
+B. 数组的下标可以是字符串       
+
+C. 数组中的元素类型必顺一致       可以存储任意类型
+
+D. 数组的下标必须是连续的         可以不连续
+
+12、下面哪项描述是错误的?(A，C) 
+
+A. 父类的构造函数与析构函数不会自动被调用               都是自动调用的
+
+B. 成员变量需要用public protected private修饰，在定义变量时不再需要var关键字
+
+C. 父类中定义的静态成员，不可以在子类中直接调用        可以用
+
+D. 包含抽象方法的类必须为抽象类，抽象类不能被实例化
+
+13、关于exit( )与die( )的说法正确的是（ C  D） 
+
+A、当exit( )函数执行会停止执行下面的脚本，而die()无法做到                exit   die都是终止程序
+
+B、当die()函数执行会停止执行下面的脚本，而exit( )无法做到
+
+C、die()函数等价于exit()函数
+
+D、die()函数于exit()函数没有直接关系     
+
+例：
+
+$a =10;
+
+exit ();或者die();
+
+echo $a;
+
+变量a没有输出，说明程序走到exit退出了或者走到 die也退出了
+
+它俩的区别：
+
+ 
+
+$a =10;
+
+echo"该程序出错了";
+
+ 
+
+exit;
+
+ 
+
+echo $a;
+
+它会输出一个错误信息并且把程序终止掉
+
+如果是
+
+$a =10;
+
+die("该程序出错了");   可以给它参数，当执行到这的时候给出一个错误并且终止程序
+
+echo $a;
+
+ 
+
+ 
+
+14、下面程序运行结果（ B ） 
+
+<?php
+$nextWeek = time() + (7 * 24 * 60 * 60);               先输出当前日期在输出下周日期，   格式化了一下
+echo 'Now: '. date('Y-m-d') ."\n";
+echo 'Next Week: '. date('Y-m-d', $nextWeek) ."\n";
+?>
+
+ 
+
+A、得到今天的日期（月-日）
+
+B、得到今天的日期（年-月-日）与下周的日期（年-月-日）
+
+C、得到现在的时间（小时-分-秒）
+
+D、得到现在到下周的时间间隔
+
+15、以下代码执行结果为：（D  ） 
+
+ 
+
+<?php
+
+functionprint_A(){ 
+
+      $A = "phpchina"; 
+
+      echo "A值为: ".$A."<p>"; 
+
+//return ($A);         如果注释去掉的话就选择C   
+
+      } 
+
+      $B = print_A();   运行时会出错，因为没有返回值，是空的
+
+      echo "B值为: ".$B."<P>"; 
+
+    ?>
+
+A  A值为: 
+
+   B值为: 
+
+B  A值为:
+
+B值为: phpchina
+
+C  A值为: phpchina
+
+   B值为: phpchina
+
+D  A值为: phpchina
+
+   B值为:  
+
+16、以下代码执行结果为：（ C ） 
+
+ 
+
+<?php
+
+$A="Hello ";                  
+
+functionprint_A()               
+
+{ 
+
+ $A = "phpmysql !!";
+
+global $A;                                               global    全局变量         函数是独立的模块                  $A外界定义的
+
+echo $A; 
+
+} 
+
+ 
+
+echo $A; 
+
+print_A(); 
+
+?>
+
+ 
+
+A Hello 
+
+B phpmysql !!
+
+C Hello Hello
+
+D Hello  phpmysql !!
+
+17、以下代码输出的结果是（B    ）    可变变量
+
+$a = "aa"; 
+
+$aa = "bb";
+
+echo $$a;
+
+A aa
+
+B bb
+
+C $aa
+
+D $$a
+
+18、以下代码输出的结果是（A    ）
+
+<?php
+
+$a = 10;
+
+$b = &$a;   取a
+
+echo $b;      b也指向10
+
+$b = 15;      
+
+echo $a;
+
+?>
+
+A 1015
+
+B 1010
+
+C 1515
+
+D 1510
+
+ 
+
+19、php输出拼接字符串正确的是（   C     ）
+
+A echo $a+”hello”           php里不是用+
+
+B echo $a+$b
+
+C echo $a.”hello”
+
+D echo ‘{$a}hello’          错在用的是单引号，双引号就对了
+
+20、在用浏览器查看网页时出现404错误可能的原因是（ B ）         404  代表网页不存在没有找到文件
+
+A 页面源代码错误
+
+B 文件不存在
+
+C 与数据库连接错误
+
+D 权限不足
+
+21、以下代码输出的结果为（D）
+
+<?php
+
+$attr = array("0"=>"aa","1"=>"bb","2"=>"cc");         加了索引是关联数组
+
+echo $attr[1];
+
+?>
+
+A 会报错！
+
+B aa
+
+C 输出为空
+
+D bb         弱类型语言，可以自动转换
+
+22、面向对象的三大特性中哪个不属于封装的做法（B       ）
+
+A 将成员变为私有的
+
+B 将成员变为公有的
+
+C 封装方法来操作成员
+
+D 使用__get()和__set()方法来操作成员
+
+23、php的源码是（A   ）   开源语言
+
+A．开放的    B．封闭的    C．需购买的     D．完全不可见的
+
+ 
+
+24、php如何输出反斜杠（  D     ）   转义字符
+
+A．\n  代表换行  B．\r  代表换行    C．\t   代表制表符  D．\\
+
+25、下列哪项不属于OOP的三大特性（B    ）
+
+A：封装      B：重载        C：继承        D：多态
+
+26、以下关于字符串的说法正确的是（C     ）
+
+    A：echo “hello\nworld”;在页面可以实现换行             在源代码里可以，在页面里不可以
+
+    B：echo ‘helloworld{$a}’;可以解析变量a的值           单引号不能解析
+
+    C：$str=<<<AA            定义字符串的第三种方法
+
+        Hello world
+
+AA;标识
+
+该方式可以定义字符串
+
+D：print $a,”hello”;可以输出数据不报错             print只能输出一个字符串，不能连续输出
+
+27、下列说法不正确的是（  D     ）
+
+A：list()函数可以写在等号左侧            唯一可以写在等号左边的
+
+B：each()函数可以返回数组里面的下一个元素     如果each第一次调的时候返回的第一个，把第一个当做下一个没有问题，如果  把第一个当做第一个就有问题
+
+C：foreach()遍历数组的时候可以同时遍历出key和value
+
+D：for循环能够遍历关联数组                           不能遍历关联数组
+
+28、关于面向对象的说法不正确的是（C     ）
+
+    A：OOP是面向对象的简称
+
+    B：静态成员是属于类的
+
+    C：普通成员是属于类的                属于对象的
+
+    D：类里面的$this关键字代表该对象本身
+
+29、下列定义函数的方式是正确的（   B     ）
+
+    A：public void Show(){  }               不是php里面的
+
+    B：function Show($a=5,$b){  }       给了个默认值
+
+   C：function Show(a,b){  }               变量前面加$符号
+
+   D：functionShow(int $a){  }            不需要加int
+
+30、下面哪个选项没有将 john 添加到 users 数组中? ( B )
+A. $users[] = "john";
+
+B. array_add($users, "john");              php没有这种方法添加
+
+C. array_push($users, "john");
+
+D. $users [“aa”]= "john" ;
+
+31、php中以下能输出1到10之间的随机数的是（C    ）
+
+    A：echo rand();
+
+    B：echorand()*10;
+
+    C：echo rand(1,10);
+
+    D：echorand(10);
+
+ 
+
+32、php中以下能输出当前时间格式像：2016-5-6 13:10:56 的是（A   ）
+
+    A：echodate(“Y-m-d H:i:s”);      date方法用来  格式化输出时间  括号里面写的是格式化字符串
+
+    B：echo time();     直接输出时间戳了
+
+    C：echodate();      方法会报错
+
+    D：echotime(“Y-m-d H:i:s”);   time里面不能写双引号
+
+33、以下哪项不属于函数的四要素（   D     ） 返回类型，函数名，参数列表，函数体
+
+    A：返回类型
+
+    B：函数名
+
+    C：参数列表
+
+    D：访问修饰符
+
+34、以下说法正确的是（C   ）
+
+    A：@符号可以屏蔽所有错误        
+    B：exit;后面的语句可以继续执行
+
+    C：10/4得出的结果是2.5    整数除以整数可以得出小数
+
+    D：$$a;这种写法是错误的
+
+ 
+
+35、以下关于构造函数说法不正确的是（    B     ）
+
+    A：研究一个类，首先我们要研究的函数是构造函数
+    B：构造函数写法和普通函数没有区别                             写法特殊有区别
+
+    C：构造函数执行比较特殊
+
+    D：如果父类中存在构造函数并且需要参数，子类在造对象的时候也应该传入相应的参数。
+
+36、以下关于多态的说法正确的是（   D     ）
+
+    A：多态在每个对象调用方法时都会发生
+    B：多态是由于子类里面定义了不同的函数而产生的
+
+    C：多态的产生不需要条件
+
+    D：当父类引用指向子类实例的时候，由于子类对父类的方法进行了重写，在父类引用调用相应的函数的时候表现出的不同称为多态。
+
+37、以下代码在页面上会输出多少行数据（A     ）
+
+$attr = array(1,2,3,4);       数组里面总共4个元素 
+
+while(list($key,$value) = each($attr))          each方法会把指针往下调，如果最后了就停止了while循环是进不来的，所以只能输出4行
+
+    {
+
+        echo $key."=>".$value."<br>";
+
+    }
+
+while(list($key,$value) = each($attr))
+
+    {
+
+        echo $key."=>".$value."<br>";
+
+    }
+
+A：4  B：6  C：8   D：12 
+
+38、以下说法正确的是（C   ）
+
+    A：$attr代表数组，那么数组长度可以通过$attr.length取到      
+
+    B：unset()方法不能删除数组里面的某个元素          可以删除
+
+    C：php的数组里面可以存储任意类型的数据
+
+    D：php里面只有索引数组    还有关联数组
+
+39、以下说法不正确的是（  B     ）
+
+    A：模糊查询使用的关键字是like
+    B：排序查询asc是降序，desc是升序               反了
+
+    C：分页查询使用的关键字是limit
+
+    D：mysql如果只安装服务不安装界面也可以正常使用
+
+40、以下代码输出的结果为（D    ）   三目运算符
+
+$a = "cc";
+
+$cc = "dd";
+
+echo $a=="cc"?"{$$a}":$a;
+
+    A：cc
+    B：$a
+
+    C：$$a
+
+    D：dd
+
+ 
+
+二、判断题（共10题，每题2分）
+
+ 
+
+1．php中布尔类型数据只有两个值：真和假。（  对  ）  逻辑的真和假
+
+2．php中连接两个字符串的符号是“+ ”。（  错   ）  用的是   点  .
+
+3．php可以使用“scanf”来打印输出结果。（   错  ）     echo   print
+
+4．每个语句结尾都要加“；”来表示语句结束。 （ 对    ） 
+
+5．php变量使用之前需要定义变量类型。（  错   ）    不需要  会根据后边的值自动确定类型
+
+6．在php中“==”的意思是“等于”。（    对  ）  一个等号代表赋值，双等号代表等于
+
+7．while和do-while语句都是先判断条件再执行循环体。（  错   ）  while是先判断条件 do-while是先执行循环体再判断
+
+8．“break ”代表的意思是跳出循环。（  对   ）  continue是跳出当前这一次循环
+
+9．若定义数组时省略关键字key，则第三个数组元素的关键字为3。（ 错  ）   应该是2   定义数组时省略关键字key，说明定义了一个索引数组，索引数组里第三元素是2
+10．mysql数据库中查询数据用select语句。（ 对      ）
+
