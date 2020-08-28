@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>考试结束 - 在线考试系统</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="top">
+			<div class="top-title">在线考试系统 - 考试结束</div>
+		</div>
+		<div class="main">
+			<div class="main-wrap">
+				<div class="main-title center">您的成绩：<?=$total?></div>
+				<table class="total-table">
+					<tr><th>题型</th><th>题号</th><th>答题情况</th><th>得分</th></tr>
+					<!-- 循环输出各题型结果 -->
+					<?php foreach($bin1 as $k=>$v){?>
+					<tr>
+						<!-- 题型 -->
+					<?php if($k==0){echo '<td rowspan="'.sizeof($bin1).'">判断题</td>';}?>	
+						<!-- 题号 -->
+						<td><?=$k+1?></td>
+						<!-- 答题情况 -->
+						<td><?=$v==$bin[$k]?"对":"错"?></td>
+						<!-- 得分 -->
+						<td><?=$v==$bin[$k]?$set['bin1']:"0"?></td>
+					</tr>
+					<?php } ?>
+					<?php foreach($sin1 as $k=>$v){?>
+					<tr>
+						<!-- 题型 -->
+					<?php if($k==0){echo '<td rowspan="'.sizeof($sin1).'">单选题</td>';}?>
+						<!-- 题号 -->
+						<td><?=$k+1?></td>
+						<!-- 答题情况 -->
+						<td><?=$v==$sin[$k]?"对":"错"?></td>
+						<!-- 得分 -->
+						<td><?=$v==$sin[$k]?$set['sin1']:"0"?></td>
+					</tr>
+					<?php } ?>
+					<?php foreach($mul1 as $k=>$v){?>
+					<tr>
+						<!-- 题型 -->
+					<?php if($k==0){echo '<td rowspan="'.sizeof($mul1).'">多选题</td>';}?>
+						<!-- 题号 -->
+						<td><?=$k+1?></td>
+						<!-- 答题情况 -->
+						<td><?=implode($v)==$mul[$k]?"对":"错"?></td>
+						<!-- 得分 -->
+						<td><?=implode($v)==$mul[$k]?$set['mul1']:"0"?></td>
+					</tr>
+					<?php } ?>
+				</table>
+				<div class="total-act">
+					<a href="./index.php">返回首页</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			PHP在线考试系统　本项目仅供学习使用
+		</div>
+	</body>
+</html>

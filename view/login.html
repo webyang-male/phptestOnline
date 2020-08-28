@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在线考试系统</title>
+<link rel="stylesheet" href="./admin/css/dashicons.css">
+<link rel="stylesheet" href="./admin/css/layout.css">
+<script src="./js/jquery.min.js"></script>
+<script>
+if(top.location !== self.location){ 
+	top.location = self.location; 
+}
+</script>
+</head>
+<body>
+<div class="top">
+<div class="top-title icon-home">在线考试系统</div>
+<div class="top-right">
+	
+</div>
+</div>
+<div class="login">
+<div class="login-wrap">
+	<a href="../" target="_blank" class="login-logo" title="点击查看前台首页"></a>
+	<div class="tips"><?=tips($msg)?></div>
+	<div class="login-box">
+		<form method="post" action="login.php">
+		<table>
+            <tr><th>用户名：</th><td><input type="text" name="username" value=""></td></tr>
+			<tr><th>密　码：</th><td><input type="password" name="password"></td></tr>
+			<tr><th></th><td><input type="submit" value="登录"></td></tr>
+		</table>
+		</form>
+	</div>
+</div>
+</div>
+</body>
+</html>

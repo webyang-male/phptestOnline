@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>首页 - 在线考试系统</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="top">
+			<div class="top-title">在线考试系统</div>
+		</div>
+		<div class="main">
+			<div class="main-wrap">
+				<div class="main-title center">请核对信息</div>
+				<table class="total-table">
+					<tr>
+						<th>姓名：</th>
+						<td>
+							<?=$_SESSION['name']?>
+						</td>
+					</tr>
+					<tr>
+						<th>学号：</th>
+						<td>
+							<?=$_SESSION['stuno']?>
+						</td>
+					</tr>
+					<tr>
+						<th>时间：</th>
+						<td>30分钟</td>
+					</tr>
+					<tr>
+						<th>总分：</th>
+						<td>100分</td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="test.php">开始抽题</a></td>
+					</tr>
+
+
+				</table>
+			</div>
+		</div>
+		<div class="footer">
+			PHP在线考试系统　本项目仅供学习使用
+		</div>
+	</body>
+</html>

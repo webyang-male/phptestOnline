@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台</title>
+		<link rel="stylesheet" href="./css/dashicons.css">
+		<link rel="stylesheet" href="./css/style1.css">
+		<script src="./js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap wrap-category">
+			<h1>考生信息管理</h1>
+			<div class="tips"><?=tips($msg)?></div>
+			<div class="box">
+				<div class="box-body">
+					<form method="post" action="?token=d1d8da704cea56e9045df5ca761993c0" enctype="multipart/form-data">
+						<table>
+							<tr>
+								<th>学号</th>
+								<th>姓名</th>
+								<th>成绩</th>
+								<th>操作</th>
+							</tr>
+							<!-- 考生 -->	
+							
+							<?php foreach($data as $v){?>	
+												
+							<tr class="hover">
+								<td class="center"><input type="text" name="save[<?=$v['id']?>][stuno]" value="<?=$v['stuno']?>" readonly="readonly"></td>
+								<td><input type="text" name="save[<?=$v['id']?>][name]" value=" <?=$v['name']?> "></td>
+								<td><input type="text" name="save[<?=$v['id']?>][score]" value="<?=$v['score']?>" readonly="readonly"></td>
+								<td> <a href="?a=del&id=<?=$v['id']?>" class="jq-del">删除</a></td>
+							</tr>
+								
+							<?php  }?>						
+							<tr>
+								<td colspan="4"><span class="jq-add s-add"><i class="icon-cross"></i><b>添加新考生</b></span></td>
+							</tr>
+							<tr>
+								<td colspan="4"><span class="jq-imp s-add"><i class="icon-cross"></i><b>导入</b></span></td>
+							</tr>
+							<tr class="s-act">
+								<td colspan="4"><input type="submit" value="提交更改"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			(function() {
+				var add_id = 0; //保存ID计数
+				//添加考生
+				$(".jq-add").click(function() {
+					$(this).parents("tr").before('<tr class="hover"><td class="center">\
+<input type="text"  name="add[' + add_id +
+						'][stuno]"></td><td colspan="2">\
+<input type="text" name="add[' + add_id +
+						'][name]">\
+<input type="hidden" name="add[' + add_id +
+						'][password]" value="">\
+		<b class="jq-cancel">取消</b></td></tr>');
+					++add_id;
+				});
+				//导入       
+				$(".jq-imp").click(function() {
+					$(this).parents("tr").before(
+						'<tr class="hover"><td class="center">\
+<input type="file"  name="imp"></td><td colspan="2">\
+\
+\
+		<b class="jq-cancel">取消</b></td></tr>'
+					);
+					++add_id;
+				});
+
+				//取消添加
+				$(document).on("click", ".jq-cancel", function() {
+					$(this).parents("tr").remove();
+				});
+				//删除前提示
+				$(".jq-del").click(function() {
+					return confirm("您确定要删除此考生？");
+				});
+			})();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PHP基础语法考试题 - 在线考试系统</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.timeout.js"></script>
+		<script>
+			$(function () {
+				//关闭页面前提示
+				$(window).on("beforeunload", function () {
+					return "您尚未交卷！此操作将导致您的回答丢失。";
+				});
+				timeOver = false; //保存当前是否已经达到交卷时间
+				//倒计时功能
+				$(".timeout").timeout({
+					//考试时间（页面刷新时，时间会重置。）
+					"maxTime": 1800,
+					//到达时间自动交卷。（如果浏览器禁用JavaScript，此功能不会生效）
+					"onTimeOver": function () {
+						timeOver = true;
+						alert("考试时间结束，系统自动交卷。");
+						$("#testForm").submit();//交卷
+					}
+				});
+				$("#testForm").submit(function (event) {
+					$(window).off("beforeunload");      //解除绑定页面关闭事件
+					timeOver || checkMultiple(event);	//检查多选题是否全部作答
+				});
+				//多选题至少选择一项
+				function checkMultiple(event) {
+					$(".jq-multiple .question-each").each(function () {
+						if ($(this).find(".question-option input[type=checkbox]:checked").length < 1) {
+							$(this).find(".question-option input[type=checkbox]:first").focus();
+							event.preventDefault();  //阻止表单提交
+							alert('您有多选题未作答。');
+							return false;
+						}
+					});
+				}
+				;
+			});
+		</script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="top-title">正在考试 （剩余时间 <span class="timeout"></span>）</div>
+		</div>
+		<div class="main">
+			<div class="main-wrap">
+				<!-- 顶部标题 -->
+				<div class="question-top">
+					<!-- 试卷标题 -->
+					<div class="question-title">PHP基础语法考试题</div>
+					<!-- 题型导航 -->
+					<div class="question-nav">
+						<a href="#binary">判断题</a>
+						<a href="#single">单选题</a>
+						<a href="#multiple">多选题</a>
+						
+					</div>
+				</div>
+				<!-- 题目内容 -->
+				<form action="total.php" method="post" id="testForm">
+					<!-- 判断题 -->
+					<div id="binary" class="anchor" ></div>
+					<div class="question-wrap">
+                            <div class="question-type">一、判断题<span>（共<?=$set['bin']?>题，每题<?=$set['bin1']?>分）</span></div>
+						<?php
+							foreach($bin as $k=>$v){?>
+						
+						<div class="question-each">
+                            <!-- 标题 -->
+                            <div class="question-name"><?=($k+1).'.'.$v['question']?></div>
+                                <!-- 选项 -->
+                                <div class="question-option">
+                                    <label><input type="radio" value="T" name="binary[<?=$k?>]" required>对</label>
+                                    <label><input type="radio" value="F" name="binary[<?=$k?>]" required>错</label>
+                                </div>                   							
+                            </div>
+						<?php	}?>
+							
+                    </div>
+					<!-- 单选题-->
+					<div id="single" class="anchor" ></div>
+										<div class="question-wrap">
+											<div class="question-type">二、单选题<span>（共<?=$set['sin']?>题，每题<?=$set['sin1']?>分）</span></div>
+											<?php
+												foreach($sin as $k=>$v){?>
+											<div class="question-each">
+												<!-- 标题 -->
+												<div class="question-name"><?=($k+1).'.'.$v['question']?></div>
+												<!-- 选项 -->
+												<div class="question-option">
+													<label><input type="radio" value="A" name="single[<?=$k?>]" required><?=$v['option1']?></label>
+													<label><input type="radio" value="B" name="single[<?=$k?>]" required><?=$v['option2']?></label>
+													<label><input type="radio" value="C" name="single[<?=$k?>]" required><?=$v['option3']?></label>
+													<label><input type="radio" value="D" name="single[<?=$k?>]" required><?=$v['option4']?></label>
+												</div>
+											</div>
+											
+											<?php	}?>
+										</div>
+										<!-- 多选题 -->
+										<div id="multiple" class="anchor" ></div>
+										<div class="question-wrap jq-multiple">
+											<div class="question-type">三、多选题<span>（共<?=$set['mul']?>题，每题<?=$set['mul1']?>分）</span></div>
+											<?php
+												foreach($mul as $k=>$v){?>
+											<div class="question-each">
+												<!-- 标题 -->
+												<div class="question-name"><?=($k+1).'.'.$v['question']?></div>
+												<!-- 选项 -->
+												<div class="question-option">
+													<label><input type="checkbox" value="A" name="multiple[<?=$k?>][]"><?=$v['option1']?></label>
+													<label><input type="checkbox" value="B" name="multiple[<?=$k?>][]"><?=$v['option2']?></label>
+													<label><input type="checkbox" value="C" name="multiple[<?=$k?>][]"><?=$v['option3']?></label>
+													<label><input type="checkbox" value="D" name="multiple[<?=$k?>][]"><?=$v['option4']?></label>
+												</div>
+											</div>
+											<?php	}?>
+										</div>
+					
+					<div class="question-act">
+						<input type="submit" value="交卷" >
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			PHP在线考试系统　本项目仅供学习使用
+		</div>
+	</body>
+</html>

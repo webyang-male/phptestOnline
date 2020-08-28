@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.min.js"></script>
+        <script>
+$(function() {
+  $('#submit').click(function() {
+    var d = {};
+    var t = $('form').serializeArray();
+    alert(t[0].value);
+    $.each(t, function() {
+      d[this.name] = this.value;
+    });   
+    if(t[0].value<10){
+        alert("总分不是100分！");
+        return false;
+    }
+    //alert(JSON.stringify(d));
+  });
+});
+</script>
+    </head>
+    <body>
+
+        <form action="index.php" method="post">
+<input id="a1" type="text" value="" name="a1"><br>
+<input id="a2" type="text" value="" name="a2"><br>
+<input id="a3" type="text" value="" name="a3"><br>
+<input id="a4" type="text" value="" name="a4"><br>
+<select id="ax" name="ax">
+<option value="0">选项1</option>
+<option value="1">选项2</option>
+</select><br>
+<input id="submit" type="button" value="提交" name="submit">
+</form>
+    </body>
+</html>

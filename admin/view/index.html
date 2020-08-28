@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台 -在线考试系统</title>
+		<link rel="stylesheet" href="./css/dashicons.css">
+		<link rel="stylesheet" href="./css/layout.css">
+		<script src="./js/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- 顶部导航 -->
+		<div class="top">
+			<div class="top-title icon-home">在线考试系统</div>
+			<div class="top-right">
+				<a href="#">您好，<?=$_SESSION['username']?></a><a href="login.php?a=logout">退出</a>
+			</div>
+		</div>
+		<!-- 主要区域 -->
+		<div class="main">
+			<!-- 左侧导航 -->
+			<div class="nav">
+				<div class="photo icon-admin"></div>
+				<a target="panel" href="./cp_index.html" class="jq-nav icon-index curr" >主页</a>
+				<a target="panel" href="./user.php" class="jq-nav icon-add">考生信息管理</a>
+				<a target="panel" href="./judge.php" class="jq-nav icon-article">判断题</a>
+                                <a target="panel" href="./single.php" class="jq-nav icon-article">单选题</a>
+                                <a target="panel" href="./multiple.php" class="jq-nav icon-article">多选题</a>
+                                <a target="panel" href="./judgelist.php" class="jq-nav icon-article">判断题管理</a>
+                                <a target="panel" href="./singlelist.php" class="jq-nav icon-article">单选题管理</a>
+                                <a target="panel" href="./multiplelist.php" class="jq-nav icon-article">多选题管理</a>
+                                 <a target="panel" href="./testset.php" class="jq-nav icon-article">试卷设置</a>
+				
+				<script>
+					//单击链接，按钮高亮
+					$(".jq-nav").click(function () {
+						$(this).addClass("curr").siblings().removeClass("curr");
+					});
+				</script>
+			</div>
+			<!-- 内容区域 -->
+			<div class="content">
+				<iframe src="./view/cp_index.html" frameborder="no" name="panel"></iframe>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台</title>
+		<link rel="stylesheet" href="./css/dashicons.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<script src="./js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('tr:even:gt(0)').addClass('tr_even');
+				$('tr:odd').addClass('tr_odd');
+			});
+		</script>
+
+		<style type="text/css">
+			th {
+				background-color: #0077a2;
+				color: #fff;
+			}
+
+			th,
+			td {
+				text-align: left;
+				border: solid #00b9eb 1px;
+			}
+
+			.headCls {
+				background-color: #ccc;
+			}
+
+			.tr_even {
+				background-color: #EBF8FF
+			}
+
+			.tr_odd {
+				background-color: #DDECF3
+			}
+
+			.tr_even:hover,
+			.tr_odd:hover {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap wrap-article">
+			<h1>单选题管理</h1>
+			<div class="s-nav">
+
+				<div>
+					<form>
+						<input type="text" name="search" value="" placeholder="输入关键字"><input type="submit" value="搜索">
+					</form>
+				</div>
+			</div>
+			<div class="tips"><?=tips($msg)?></div>
+			<div class="box">
+				<div class="box-body">
+					<table>
+						<tr>
+							<th>题目</th>
+							<th width="150">选项A</th>
+							<th width="150">选项B</th>
+							<th width="150">选项C</th>
+							<th width="150">选项D</th>
+							<th width="150">答案</th>
+							<th width="100">操作</th>
+						</tr>
+				<?php foreach($data as $v){ ?>
+						<tr>
+							<td><?=$v['question']?></td>
+							<td><?=$v['option1']?></td>
+							<td><?=$v['option2']?></td>
+							<td><?=$v['option3']?></td>
+							<td><?=$v['option4']?></td>
+							<td><?=$v['answer']?></td>
+					
+							<td><a href="single.php?id=<?=$v['id']?>">编辑</a>&nbsp;&nbsp;<a href="?a=del&page=1&id=<?=$v['id']?>" class="jq-del">删除</a></td>
+						</tr>
+<?php } ?>
+					</table>
+
+				</div>
+			</div>
+			<div class="pagelist"><span>首页</span><span>上一页</span><a href="?page=1" class="curr">1</a><a href="?page=2">2</a><a
+				 href="?page=2">下一页</a><a href="?page=2">尾页</a></div>
+		</div>
+		<script>
+			(function() {
+				//删除前提示
+				$(".jq-del").click(function() {
+					return confirm("您确定要删除？");
+				});
+			})();
+		</script>
+	</body>
+</html>

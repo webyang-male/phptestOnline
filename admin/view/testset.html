@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台</title>
+		<link rel="stylesheet" href="./css/dashicons.css">
+		<link rel="stylesheet" href="./css/style1.css">
+		<script src="./js/jquery.min.js"></script>		
+	</head>
+	<body>
+		<div class="wrap wrap-category">
+			<h1>试卷设置</h1>
+			<div class="tips"><?=tips($msg)?></div>
+			<div class="box">
+				<div class="box-body">
+					<form method="post" action="?token=d1d8da704cea56e9045df5ca761993c0">
+						<table style="text-align: center;" class="testset" style="border: r 1px;">
+                            <tr><th>题型</th><th>小题数</th><th>小题分</th></tr>
+                            <tr><td>判断题</td><td><input id="a1" type="text" name="bin" onkeyup="this.value=this.value.replace(/\D/g,'')"/></td>
+							<td><input type="text" id="a11" name="bin1"/></td></tr>
+                            <tr><td>单选题</td><td><input id="a2" type="text" name="sin"/>
+							</td><td><input id="a22" type="text" name="sin1"/></td></tr>
+                            <tr><td>多选题</td><td><input id="a3" type="text" name="mul"/>
+							</td><td><input type="text" id="a33" name="mul1"/></td></tr>
+							<tr class="s-act"><td colspan="3"><input type="submit" value="提交更改" id="submit"></td></tr>
+						</table>
+					</form>					
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">	
+		  $(function (){
+		 $('#submit').click(function(){
+		 	var c1=$("#a1").val();
+		 	var c2=$("#a11").val();
+		 	var c3=$("#a2").val();
+		 	var c4=$("#a22").val();
+		 	var c5=$("#a3").val();		
+		 	var c6=$("#a33").val();		
+		 	var s=c1*c2+c3*c4+c5*c6;
+		 	console.log(s);
+			if(s!=100){
+				alert("总分不是100分");
+				 return false;
+			}
+		 })	
+		  	})
+		  
+ </script>
+	</body>
+<html>

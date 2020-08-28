@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<script src="./js/ckeditor/ckeditor.js"></script>
+	</head>
+	<body>
+		<div class="wrap wrap-article-edit">
+			<h1>多选题</h1>
+			<div class="tips"><?=tips($msg)?></div>
+			<div class="box">
+				<div class="box-title">添加/编辑</div>
+				<div class="box-body">
+                                    <form method="post" action="?id=<?=$id?>">
+						<table>
+							
+		<tr class="s-description"><th>题目：</th><td><textarea name="question"><?=$data['question']?></textarea><span>（内容提要请在 200 个字以内）</span></td></tr>	
+		<tr><th width="80">选项A：</th><td><input type="text" name="option1" value="<?=$data['option1']?>"></td></tr>
+<tr><th width="80">选项B：</th><td><input type="text" name="option2" value="<?=$data['option2']?>"></td></tr>
+<tr><th width="80">选项C：</th><td><input type="text" name="option3" value="<?=$data['option3']?>"></td></tr>
+<tr><th width="80">选项D：</th><td><input type="text" name="option4" value="<?=$data['option4']?>"></td></tr>
+		<tr class="s-editor"><th>答案：</th><td>
+<input type="checkbox" name="answer[]" value="A" <?=strpos($data['answer'],'A')!==false?'checked="checked"':'' ?> />A
+<input type="checkbox" name="answer[]" value="B" <?=strpos($data['answer'],'B')!==false?'checked="checked"':'' ?>/>B
+<input type="checkbox" name="answer[]" value="C" <?=strpos($data['answer'],'C')!==false?'checked="checked"':'' ?>/>C
+<input type="checkbox" name="answer[]" value="D" <?=strpos($data['answer'],'D')!==false?'checked="checked"':'' ?>/>D
+</tr>
+		<tr class="s-act"><th></th><td><input type="submit" value="保存"></td></tr>
+	</table>
+	</form>
+</div>
+</div>
+</div>
+<script src="./js/article.config.js"></script>
+<script>
+	CKEDITOR.config.height = 400;
+	CKEDITOR.config.width = "100%";
+	CKEDITOR.replace("content");
+		</script>
+</body>
+</html>
