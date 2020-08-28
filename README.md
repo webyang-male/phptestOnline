@@ -23,5 +23,7 @@ PHP学生考试管理系统
 3.使用前请务必查看`main`文件夹，里面有数据库文件和项目参考信息，助你快速运行本项目   
 
 ### 项目效果
-图片也可在本项目的**readmeImg**文件夹中查看    
-![image](https://github.com/webyang-male/testOnline/blob/master/readmeImages/student.png)
+更多细节图片可在本项目的**readmeImg**文件夹中查看  
+
+![image](https://github.com/webyang-male/testOnline/blob/master/readmeImages/student.png)   
+![image](https://github.com/webyang-male/testOnline/blob/master/readmeImages/adminHome.png)  
